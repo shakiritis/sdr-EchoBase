@@ -23,7 +23,7 @@ sudo apt install portaudio19-dev   # Linux dependency
 2. **Speech Transcription (`speech2txt.py`)**  
 - Continuously records microphone input.  
 - Uses **Faster-Whisper** to transcribe speech to text in near real time.  
-- Maintains a sliding buffer of recent audio (≈30s) and applies VAD to filter silence.  
+- Maintains a sliding buffer of recent audio (≈30s) and applies Voice Activity Detection to filter silence.  
 - Writes recognized text segments into **`transcript.txt`**, which acts as the message source for the SDR transmission.  
 
 3. **Transmission (`TX.py`)**  
